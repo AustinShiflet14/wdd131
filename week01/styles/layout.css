@@ -16,7 +16,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Layout areas */
 header {
     grid-area: header;
     background-color: #333;
