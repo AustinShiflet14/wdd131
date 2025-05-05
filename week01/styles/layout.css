@@ -39,8 +39,13 @@ nav {
     padding: 1rem 0;
 }
 
-.nav-menu li {
+a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 main {
