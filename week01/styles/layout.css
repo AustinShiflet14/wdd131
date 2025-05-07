@@ -54,6 +54,7 @@ main {
     padding: 1rem;
 }
 
+
 aside {
     grid-area: aside;
     background-color: #eee;
