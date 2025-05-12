@@ -10,18 +10,23 @@ deletebutton.textContent = '❌';
 
 button.addEventListener('click', function() {
     if (input.value.trim() !== '') {
+        const li = document.createElement('li');
+        const deletebutton = document.createElement('button');
+
         li.textContent = input.value;
+        deletebutton.textContent = '❌';
+        
         li.append(deletebutton); 
         list.append(li);
 
         input.value = ''; 
         input.focus(); 
+
+        deletebutton.addEventListener('click', function() {
+            list.removeChild(li);
+            input.focus(); 
+        });
     } else {
         input.focus();
     }
-});
-
-deletebutton.addEventListener('click', function() {
-    list.removeChild(li);
-    input.focus(); 
 });
