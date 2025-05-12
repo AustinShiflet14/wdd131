@@ -1,12 +1,6 @@
-// heres the revised code
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
-
-const li = document.createElement('li');
-const deletebutton = document.createElement('button');
-
-deletebutton.textContent = '❌';
 
 button.addEventListener('click', function() {
     if (input.value.trim() !== '') {
