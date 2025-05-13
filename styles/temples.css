@@ -1,0 +1,113 @@
+* {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: darkslategray;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+header p {
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+nav {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    background-color: darkslategray;
+    padding: 1rem;
+    width: 100%;
+}
+
+.hamburger-menu.open {
+    display: flex;
+    max-height: 500px;
+    justify-items: center;
+
+}
+
+.hamburger-menu nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hamburger-menu a {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+.hamburger-menu a:hover {
+    color: yellow;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+footer {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    color: yellow;
+}
+
+@media (min-width: 600px) {
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
