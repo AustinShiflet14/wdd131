@@ -14,12 +14,12 @@ header {
     align-items: center;    
 }
 
-header p {
+header h1 {
     margin: 0.5rem;
     font-size: 2rem;
 }
 
-h1 {
+main h1 {
     text-align: center;
     margin: 2rem 0;
     font-size: 3rem;
