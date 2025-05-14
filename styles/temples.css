@@ -44,13 +44,14 @@ nav {
     background-color: darkslategray;
     padding: 1rem;
     width: 100%;
+    transition: .3s ease-in-out;
 }
 
 .hamburger-menu.open {
     display: flex;
     max-height: 500px;
     justify-items: center;
-
+    width: 100%;transition: .3s ease;
 }
 
 .hamburger-menu nav {
