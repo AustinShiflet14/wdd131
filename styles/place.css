@@ -11,4 +11,8 @@ header {
 
 body {
     background-color: darkslategray;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
