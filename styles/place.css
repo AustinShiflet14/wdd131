@@ -43,6 +43,11 @@ main picture {
     margin: 0 auto;
     max-width: 300px;
 }
+
+.data h2 {
+    padding: 10px;
+    font-weight: 700;
+}
 .weather {
     display: flex;
     flex-direction: column;
@@ -51,6 +56,11 @@ main picture {
     margin: 0 auto;
     margin-top: 20px;
     max-width: 300px;
+}
+
+.weather h2 {
+    padding: 10px;
+    font-weight: 700;
 }
 
 .emoji {

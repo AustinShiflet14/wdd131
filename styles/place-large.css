@@ -55,6 +55,14 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
+    .weather::after {
+        content: "⛅";
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: var(--main-color);
+    }
+
     .phone {
         display: none;
     }
