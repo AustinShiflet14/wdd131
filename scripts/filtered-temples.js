@@ -155,7 +155,6 @@ document.querySelectorAll("nav a, .hamburger-menu a").forEach((link) => {
     const filter = link.textContent.toLowerCase();
     filterTemples(filter);
 
-    // Close the hamburger menu after a link click (optional, but good UX)
     const menu = document.querySelector('.hamburger-menu');
     const icon = document.querySelector('.hamburger');
     if(menu.classList.contains('open')) {
