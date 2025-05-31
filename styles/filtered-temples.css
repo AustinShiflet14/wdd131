@@ -25,6 +25,11 @@ h2 {
     font-size: 3rem;
 }
 
+figure {
+    background-color: #cccccc;
+    margin: 10px;
+}
+
 nav {
     display: none;
 }
