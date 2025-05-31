@@ -149,10 +149,18 @@ function filterTemples(criteria) {
   displayTemples(filtered);
 }
 
-document.querySelectorAll("nav a").forEach((link) => {
+document.querySelectorAll("nav a, .hamburger-menu a").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const filter = link.textContent.toLowerCase();
     filterTemples(filter);
+
+    // Close the hamburger menu after a link click (optional, but good UX)
+    const menu = document.querySelector('.hamburger-menu');
+    const icon = document.querySelector('.hamburger');
+    if(menu.classList.contains('open')) {
+      menu.classList.remove('open');
+      icon.textContent = "☰";
+    }
   });
 });
