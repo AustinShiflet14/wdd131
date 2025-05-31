@@ -96,3 +96,63 @@ const temples = [
     "https://churchofjesuschristtemples.org/assets/img/temples/okinawa-japan-temple/okinawa-japan-temple-40845-main.jpg"
   },
 ];
+
+const displayTemples = (temples) => {
+  const container = document.getElementById("templeCards");
+  container.innerHTML = ""; 
+
+  temples.forEach((temple) => {
+    const card = document.createElement("figure");
+
+    const img = document.createElement("img");
+    img.src = temple.imageUrl;
+    img.alt = temple.templeName;
+    img.loading = "lazy";
+
+    const caption = document.createElement("figcaption");
+    caption.innerHTML = `
+      <h3>${temple.templeName}</h3>
+      <p><strong>Location:</strong> ${temple.location}</p>
+      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+      <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+    `;
+
+    card.appendChild(img);
+    card.appendChild(caption);
+    container.appendChild(card);
+  });
+};
+
+displayTemples(temples);
+
+function filterTemples(criteria) {
+  let filtered = [];
+
+  switch (criteria) {
+    case "old":
+      filtered = temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
+      break;
+    case "new":
+      filtered = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
+      break;
+    case "large":
+      filtered = temples.filter(t => t.area > 90000);
+      break;
+    case "small":
+      filtered = temples.filter(t => t.area < 10000);
+      break;
+    default:
+      filtered = temples;
+  }
+
+  document.getElementById("filterTitle").textContent = criteria.charAt(0).toUpperCase() + criteria.slice(1);
+  displayTemples(filtered);
+}
+
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const filter = link.textContent.toLowerCase();
+    filterTemples(filter);
+  });
+});
