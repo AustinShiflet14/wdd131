@@ -1,0 +1,51 @@
+* {
+    --primary-color: #333333;
+    --secondary-color: #A0C4FF;
+    --background-color: #F6EEE6;
+    --primary-font: "Bona Nova SC", serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 3rem;
+    max-width: 800px;
+    display: block;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wireframe {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.wireframeimg {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+}
