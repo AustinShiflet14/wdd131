@@ -20,14 +20,14 @@
     <main>
         <form method="get" action="review.html" class="wf2">
             <fieldset>
-            <legend>Product Name </legend>
+            <legend>Product Name* </legend>
                 <label>
                     <select name="product" required>
                         <option value="" disabled selected>Choose a Product... ▼</option>
                     </select>
                 </label>
 
-            <div>Overall Rating</div>
+            <div>Overall Rating*</div>
                 <div class="star-rating">
                     <label><span>☆</span><input type="radio" name="rating" value="1" required></label>
                     <label><span>☆☆</span><input type="radio" name="rating" value="2" required></label>
@@ -36,14 +36,14 @@
                     <label><span>☆☆☆☆☆</span><input type="radio" name="rating" value="5" required></label>
                 </div>
 
-            <div>Date of Installation </div>
+            <div>Date of Installation*</div>
                 <label><input type="date" id="installation_date" name="date" required></label>
 
-                <div>Which Features did you find useful in the product? (Check all that apply)</div>
-                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
-                <label><input type="checkbox" id="ease_of_use" name="use" value="yes">Ease of Use</label>
-                <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
-                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+                <div>Which Features did you find useful in the product?* (Check all that apply)</div>
+                <label><input type="checkbox" id="durability" name="durability" value="yes" required>Durability</label>
+                <label><input type="checkbox" id="ease_of_use" name="use" value="yes" required>Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes" required>Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes" required>Design</label>
             </fieldset>
             <fieldset>
             <legend>Written Review (Optional)</legend>
