@@ -90,15 +90,12 @@ footer {
     cursor: pointer;
 }
 
-.wf2 input:required {
-    border-bottom: solid 8px red;
-}
-
-.wf2 input:required:valid {
-    border-bottom: solid 8px green;
-}
-
 .wf2 div {
     font-weight: 700;
     margin-top: 20px;
+}
+
+main p {
+    font-style: italic;
+    margin-left: 2%;
 }
