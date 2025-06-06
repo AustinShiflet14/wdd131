@@ -7,6 +7,7 @@ header {
 
 body {
     background-color: #C9DFEC;
+    font-family: "Bona Nova SC", serif;
 }
 
 footer {
@@ -83,10 +84,9 @@ footer {
     border: none;
     border-radius: 6px;
     padding: 1rem;
-    margin-bottom: 1rem;
-    margin-top: -1rem;
+    margin: -1rem 2% 2rem 2%;
     background-color: #2A9D8F;
-    width: 90%;
+    width: 96%;
 }
 
 .wf2 input[type="submit"]:hover {
