@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Austin Shiflet">
+    <meta name="description" content="A form for submitting product reviews.">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf2">
+            <fieldset>
+                <legend>Product Name </legend>
+                <label><select name="product">
+                    <option value="" disabled selected>Choose a Product... &#9662 </option>
+                    <option value="product1">Product 1</option>
+                    <option value="product2">Product 2</option>
+                    <option value="product3">Product 3</option>
+                </select></label>
+
+                <legend>Overall Rating</legend>
+                <div class="star-rating">
+                    <label><span>☆</span><input type="radio" name="rating" value="1" required></label>
+                    <label><span>☆☆</span><input type="radio" name="rating" value="2" required></label>
+                    <label><span>☆☆☆</span><input type="radio" name="rating" value="3" required></label>
+                    <label><span>☆☆☆☆</span><input type="radio" name="rating" value="4" required></label>
+                    <label><span>☆☆☆☆☆</span><input type="radio" name="rating" value="5" required></label>
+                </div>
+
+                <legend>Date of Installation </legend>
+                <label><input type="date" id="installation_date" name="date" required></label>
+
+                <legend>Which Features did you find useful in the product? (Check all that apply)</legend>
+                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="ease_of_use" name="use" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (Optional)</legend>
+                <textarea id="comments" name="comments" rows="5" cols="40" placeholder=""></textarea>
+                <legend>Your Name (Optional)</legend>
+                <label><input type="text" id="name" name="name" placeholder=""></label>
+            </fieldset>
+            <input type="submit" id="submit" name="submit" value="Rate This Product"></button>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🏀 Austin Shiflet 🏀 Utah, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

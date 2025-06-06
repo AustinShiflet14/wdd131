@@ -1,0 +1,104 @@
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: #2C5F77;
+    font-size: 1.25rem;
+}
+
+body {
+    background-color: #C9DFEC;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #2C5F77;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#lastModified {
+    color: yellow;
+}
+
+.wf2 fieldset {
+    margin: 2rem 0;
+    width: 90%;
+    max-width: 400px;
+    padding: .5rem 2%;
+    border: none;
+}
+
+.wf2 legend {
+    font-weight: 700;
+}
+
+.wf2 input[type="text"],
+.wf2 input[type="date"],
+.wf2 select,
+.wf2 textarea {
+    display: block;
+    padding: .75rem;
+    width: 90%;
+    margin-bottom: .5rem;
+    appearance: none;
+    border: solid 1px black;
+    border-radius: 6px;
+}
+
+.wf2 label {
+    display: block;
+}
+
+.wf2 legend {
+    margin-top: 30px;
+}
+
+.wf2 input[type="radio"],
+.wf2 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.star-rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star-rating span {
+    font-size: 1rem;
+}
+
+.wf2 textarea, #name {
+    border: solid 1px black;
+    border-radius: 6px;
+}
+
+.wf2 input[type="submit"] {
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    background-color: #2A9D8F;
+    width: 90%;
+}
+
+.wf2 input[type="submit"]:hover {
+    background-color: #264653;
+    color: white;
+    cursor: pointer;
+}
+
+.wf2 input:required {
+    border-bottom: solid 8px red;
+}
+
+.wf2 input:required:valid {
+    border-bottom: solid 8px green;
+}
