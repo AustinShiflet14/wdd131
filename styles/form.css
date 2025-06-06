@@ -50,10 +50,6 @@ footer {
     display: block;
 }
 
-.wf2 legend {
-    margin-top: 30px;
-}
-
 .wf2 input[type="radio"],
 .wf2 input[type="checkbox"] {
     margin-right: 6px;
@@ -101,4 +97,9 @@ footer {
 
 .wf2 input:required:valid {
     border-bottom: solid 8px green;
+}
+
+.wf2 div {
+    font-weight: 700;
+    margin-top: 20px;
 }
