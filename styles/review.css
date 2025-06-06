@@ -1,0 +1,30 @@
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: #2C5F77;
+    font-size: 1.25rem;
+}
+
+body {
+    background-color: #C9DFEC;
+    font-family: "Bona Nova SC", serif;
+}
+
+main p {
+    padding-bottom: 10rem;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+footer {
+    padding: 1rem;
+    background-color: #2C5F77;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#lastModified {
+    color: yellow;
+}
