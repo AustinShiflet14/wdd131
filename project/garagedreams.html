@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garage Dreams</title>
-    <meta title="author" content="Austin Shiflet">
-    <meta title="description" content="The site provides beginner-friendly advice for building your first project car. It includes parts recommendations, budget planning, tool essentials, common mistakes to avoid, and a community form for asking questions or sharing your progress.">
-    <link rel="stylesheet" href="styles/garage.css"/>
+    <meta name="author" content="Austin Shiflet">
+    <meta name="description" content="The site provides beginner-friendly advice for building your first project car. It includes parts recommendations, budget planning, tool essentials, common mistakes to avoid, and a community form for asking questions or sharing your progress.">
+    <link rel="stylesheet" href="styles/garage.css">
+    <link rel="stylesheet" href="styles/garage-large.css">
     <script src="scripts/garage.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo.webp" alt="Garage Dreams Logo" width="300">
+        <h1>Garage Dreams</h1>
+        <nav>
+            <a href="garagedreams.html">Home</a>
+            <a href="garagecontact.html">Contact Us</a>
+            <a href="garagefaqs.html">FAQs</a>
+        </nav>
+    </header>
+    <main>
+        <picture class="background">
+            <source srcset="images/background-large.webp" media="(min-width: 768px)">
+            <img src="images/background.webp" alt="Background" loading="lazy">
+        </picture>
+        <div class="text1">
+            <p>Your first project car can be an exciting — and sometimes intimidating — experience. You want everything to be perfect, and the fear of messing up is real. I've been there. After a lot of trial and error, here's what I've learned: it doesn't need to be perfect.</p>
+            <p>Every car has its imperfections, and failure is one of the best teachers. The more you work on cars, the more confident you'll become. Don't be afraid to try new things or make mistakes — just make sure you learn from them.</p>
+            <p>That said, there are some things you should avoid as a beginner. That's one of the main reasons I created this page. Be sure to check out the FAQ section above — I guarantee you'll find at least one thing you didn't know before</p>
+        </div>
+        <div class="text2">
+            <p>If you have a question that isn't answered on the FAQs page, just head over to our Contact Us page at the top.</p>
+            <p>Our team has years of hands-on experience across a wide range of specialties — from engine repair and fluid changes to general maintenance and detailing. Each member brings their own area of expertise, so whatever your question is, someone on the team can help.</p>
+            <p>Give it a try — you won't be disappointed.</p>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🏀 Austin Shiflet 🏀 Utah, United States</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
